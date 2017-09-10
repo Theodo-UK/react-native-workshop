@@ -76,7 +76,29 @@ Run `npm run deploy:staging:android` and wait for the magic to happen
 
 - You should see the Android app created in your HockeyApp account
 
+### BONUS: Update the app icon
 
+We're going to use the generator again. First, you need a `192x192` image (we provided you with a very nice one but you're free to use your own).
+
+You also need to install `imagemagick`
+
+```
+brew install imagemagick
+```
+
+And then
+
+```
+yo rn-toolbox:assets --icon theodo-rn-appicon.png
+```
+
+Finally, the change will only apply to Android if we bump the version, so you need to update the version in the `android/app/build.gradle` to `1.1.0`
+
+Now you can deploy this new version with the icon to Hockeyapp:
+
+```
+npm run deploy:staging:ios && npm run deploy:staging:android
+```
 
 
 
