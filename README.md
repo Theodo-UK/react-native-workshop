@@ -1,4 +1,4 @@
-# React Native deployment workshop
+# React Native Deployment workshop
 
 Deploying a React Native app to a staging platform quicker than...
 
@@ -7,17 +7,33 @@ Deploying a React Native app to a staging platform quicker than...
 `git clone git@github.com:Theodo-UK/react-native-workshop.git`
 (or `git clone https://github.com/Theodo-UK/react-native-workshop.git`)
 
-## Steps already done
+## Before we start
+
+### What you should have done
+
+- [ ] Node > `6` installed
+- [ ] Ruby > `2.2.3` (and < `2.4`*)
+- [ ] Bundler installed (`gem install bundler`)
+- [ ] Yeoman installed (`npm i -g yo`)
+- [ ] Yarn installed (`npm i -g yarn`)
+- [ ] react-native-cli installed (`npm i -g react-native-cli`)
+- [ ] The RN-Toolbox Yeoman generator installed (`npm install -g yo generator-rn-toolbox`)
+
+### What we did for you <3
 
 These are steps already taken to setup a basic app that we can use to test the deployment tools.
 
-- node and npm installed
-- Ruby installed
-- React Native installed
-- `react-native init deploymentWorkshop`
-- Changed the text and added an image to index.ios.js and index.android.js
+- [ x ] `react-native init deploymentWorkshop`
+- [ x ] Changed the text and added an image to index.ios.js and index.android.js
 
-To check that your setup is working correctly: `react-native run-ios`
+## Setting up locally
+
+```
+cd deploymentWorkshop
+yarn
+```
+
+And check that your setup is working correctly: `react-native run-ios`
 
 ## Setting up for deployment
 
