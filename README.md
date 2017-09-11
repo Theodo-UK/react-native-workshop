@@ -25,8 +25,8 @@ Deploying a React Native app to a staging platform quicker than...
 
 These are steps already taken to setup a basic app that we can use to test the deployment tools.
 
-- [ x ] `react-native init deploymentWorkshop`
-- [ x ] Changed the text and added an amazing image to `index.ios.js` and `index.android.js`
+- [x] `react-native init deploymentWorkshop`
+- [x] Changed the text and added an amazing image to `index.ios.js` and `index.android.js`
 
 ## Setting up locally
 
@@ -62,6 +62,11 @@ And check that your setup is working correctly: `react-native run-ios`
 - In your HockeyApp account, go to "Account Settings > API TOKENS" and create a new token to READ and WRITE all your apps. Call it "All apps"
 - Copy the token and paste it when the generator asks for a valid HockeyApp token
 
+### Generating the provisioning profiles for iOS
+
+```
+bundle exec fastlane ios setup --env=staging
+```
 
 ### Deploy the iOS version
 
