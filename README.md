@@ -1,6 +1,6 @@
 # React Native Deployment Workshop
 
-Deploying a React Native app to a staging platform in a blink.
+Deploying a React Native app to a staging platform faster than lightning ⚡️. 
 
 ![Take Off!](https://media.giphy.com/media/3oriNYQX2lC6dfW2Ji/giphy.gif "Logo Title Text 1")
 ## Start here
@@ -39,7 +39,7 @@ And check that your setup is working correctly: `react-native run-ios`
 
 ## Setting up for deployment
 
-### Setup Fastlane for this project
+###  🚘 Setup Fastlane for this project
 
 `yo rn-toolbox:fastlane-setup`
 
@@ -62,7 +62,7 @@ And check that your setup is working correctly: `react-native run-ios`
 - [ ] In your [HockeyApp account](https://rink.hockeyapp.net/manage/auth_tokens), go to `Account Settings > Api Tokens` and create a new token will full access to all your apps.
 - [ ] Copy the token and paste it when the generator asks for a valid HockeyApp token.
 
-### Generating the provisioning profiles for iOS
+### ⚙ Generating the provisioning profiles for iOS
 
 ```
 bundle exec fastlane ios setup --env=staging
@@ -70,7 +70,7 @@ bundle exec fastlane ios setup --env=staging
 
 - You should see your `certificates` Git repository updated.
 
-### Deploy the iOS version
+### 🍏 Deploy the iOS version
 
 Run `npm run deploy:staging:ios` and wait for the magic to happen.
 
@@ -79,13 +79,13 @@ Run `npm run deploy:staging:ios` and wait for the magic to happen.
 
 Now to allow your iPhone to download and install the app, go on HockeyApp under "Users" and invite yourself. From your iPhone, check the email and sign-in to HockeyApp from there. 
 
-### Deploy the Android version
+### 🤖 Deploy the Android version
 
 Run `npm run deploy:staging:android` and wait for the magic to happen
 
 - You should see the Android app created in your HockeyApp account
 
-### BONUS: Update the app icon
+### 🖼 BONUS: Update the app icon
 
 We're going to use the generator again. First, you need a `192x192` image (we provided you with a very nice one but you're free to use your own).
 
