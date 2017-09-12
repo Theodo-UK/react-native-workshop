@@ -6,7 +6,7 @@ export default class deploymentWorkshop extends Component {
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
-          Welcome to the React Native deployment workshop!
+          Welcome to the React Native Deployment Workshop!
         </Text>
         <Image
           style={styles.logo}
