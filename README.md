@@ -64,6 +64,8 @@ And check that your setup is working correctly: `react-native run-ios`
 
 ### ⚙ Generating the provisioning profiles for iOS
 
+If you don't know what provision profiles are, I highly recommend you read the following article written by our own Hari: https://www.theodo.fr/blog/2017/02/a-beginners-guide-to-ios-provisioning-profiles/
+
 ```
 bundle exec fastlane ios setup --env=staging
 ```
